@@ -146,7 +146,7 @@ if SERVER then
 		end
 
 		-- Undo AFK
-		self.AfkTime = (CurTime() + AFKTime)
+		-- self.AfkTime = (CurTime() + AFKTime)
 	end
 
 	function meta:MessageSwing(swing)
@@ -154,9 +154,9 @@ if SERVER then
 	end
 
 	function meta:AwardSwing(swing)
-		self:AddAchivement(ACHIVEMENTS.MINIMILESTONE1, 1)
-		self:AddAchivement(ACHIVEMENTS.MINIGREENGREENS, 1)
-		--self:AddAchivement( ACHIVEMENTS.MINIMILESTONE1, 1 )
+		-- self:AddAchivement(ACHIVEMENTS.MINIMILESTONE1, 1)
+		-- self:AddAchivement(ACHIVEMENTS.MINIGREENGREENS, 1)
+		-- self:AddAchivement( ACHIVEMENTS.MINIMILESTONE1, 1 )
 
 		if swing == 1 then
 			self:SetAchivement(ACHIVEMENTS.MINIHOLEINONE, 1)

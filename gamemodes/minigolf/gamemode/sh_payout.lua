@@ -17,7 +17,7 @@ Payouts = {
 }
 
 for k, v in pairs(Payouts) do
-	payout.Register(k, v)
+	-- payout.Register(k, v)
 end
 
 local MoneyScores = {
@@ -32,6 +32,7 @@ local MoneyScores = {
 
 -- Scores is in the shared.lua file
 for k, score in pairs(MoneyScores) do
+	--[[
 	payout.Register(
 		Scores[k],
 		{
@@ -40,6 +41,7 @@ for k, score in pairs(MoneyScores) do
 			GMC = score[1]
 		}
 	)
+	]]--
 end
 
 function GM:GiveMoney()
@@ -49,23 +51,23 @@ function GM:GiveMoney()
 
 	for _, ply in pairs(player.GetAll()) do
 		if not ply.AFK then
-			payout.Clear(ply)
+			-- payout.Clear(ply)
 
 			local swing = ply:Swing()
 
 			local pardiff = ply:GetParDiff(swing)
 
 			if swing == 1 then
-				payout.Give(ply, "HoleInOne")
+				-- payout.Give(ply, "HoleInOne")
 			else
 				if MoneyScores[pardiff] then
-					payout.Give(ply, Scores[pardiff])
+					-- payout.Give(ply, Scores[pardiff])
 				else
-					payout.Give(ply, "OverBogey")
+					-- payout.Give(ply, "OverBogey")
 				end
 			end
 
-			payout.Payout(ply)
+			-- payout.Payout(ply)
 		end
 	end
 end

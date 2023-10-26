@@ -208,7 +208,7 @@ function ENT:HandleReady( vel )
 		local owner = self:GetOwner()
 		if IsValid( owner ) and SERVER then
 
-			owner.AfkTime = (CurTime() + AFKTime)
+			-- owner.AfkTime = (CurTime() + AFKTime)
 
 		end
 
@@ -536,7 +536,7 @@ function ENT:Draw()
 	if IsValid( owner ) then
 
 		--owner:ManualEquipmentDraw()
-		owner:ManualBubbleDraw()
+		-- owner:ManualBubbleDraw()
 
 		// Setup color
 		self.Color = owner:GetBallColor() * 255

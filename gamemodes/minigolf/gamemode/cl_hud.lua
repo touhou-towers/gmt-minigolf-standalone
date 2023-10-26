@@ -299,7 +299,7 @@ function GM:DrawHUDPower()
 	surface.SetDrawColor(80, 80, 80, 150)
 	surface.DrawRect(offset, ScrH() - offset - h - y, w, h)
 	surface.SetDrawColor(255, 255, 255, 255)
-	draw.RectFillBorder(offset, ScrH() - offset - h - y, w, h, thickness, percent, Color(31, 31, 31), Color(255, 255, 255))
+	-- draw.RectFillBorder(offset, ScrH() - offset - h - y, w, h, thickness, percent, Color(31, 31, 31), Color(255, 255, 255))
 
 	if Swing.lastpower > 0 then
 		surface.SetDrawColor(255, 0, 0, 255)

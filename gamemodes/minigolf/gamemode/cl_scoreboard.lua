@@ -8,12 +8,12 @@ ColorNormal = Color(44, 83, 17, 255)
 ColorBright = Color(61, 102, 31, 255)
 ColorDark = Color(25, 49, 8, 255)
 
-ColorBackground = colorutil.Brighten(ColorNormal, 0.75)
+ColorBackground = ColorNormal -- colorutil.Brighten(ColorNormal, 0.75)
 
-ColorTabActive = colorutil.Brighten(ColorDark, 0.75, 150)
+ColorTabActive = ColorDark -- colorutil.Brighten(ColorDark, 0.75, 150)
 ColorTabDivider = ColorBright
 ColorTabInnerActive = ColorTabActive
-ColorTabHighlight = colorutil.Brighten(ColorBright, 3)
+ColorTabHighlight = ColorBright -- colorutil.Brighten(ColorBright, 3)
 
 ColorAwardsDescription = Color(184, 239, 144, 255)
 ColorAwardsBarAchieved = Color(61, 102, 31, 150)
@@ -22,9 +22,9 @@ ColorAwardsAchievedIcon = Color(61, 102, 31, 255)
 
 -- HEADER
 HeaderTitle = ""
-HeaderMatHeader = Scoreboard.GenTexture("ScoreboardMinigolfLogo", "minigolf/main_header")
-HeaderMatFiller = Scoreboard.GenTexture("ScoreboardMinigolfFiller", "minigolf/main_filler")
-HeaderMatRightBorder = Scoreboard.GenTexture("ScoreboardMinigolfRightBorder", "minigolf/main_rightborder")
+HeaderMatHeader = "" -- Scoreboard.GenTexture("ScoreboardMinigolfLogo", "minigolf/main_header")
+HeaderMatFiller = "" -- Scoreboard.GenTexture("ScoreboardMinigolfFiller", "minigolf/main_filler")
+HeaderMatRightBorder = "" -- Scoreboard.GenTexture("ScoreboardMinigolfRightBorder", "minigolf/main_rightborder")
 
 -- PLAYER
 -- Subtitle (under name)

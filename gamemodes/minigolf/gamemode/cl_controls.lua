@@ -36,7 +36,7 @@ function HandleControls()
 		return
 	end
 
-	if GTowerChat.Chat and not GTowerChat.Chat.inputpanel:IsVisible() then
+	if true then
 		if not LocalPlayer():IsTyping() then
 			local speed = 1
 

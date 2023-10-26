@@ -1,8 +1,9 @@
 GM.Name = "GMod Tower: Minigolf"
 
-DeriveGamemode("gmodtower")
+-- DeriveGamemode("gmodtower")
 
 GM.Holes = GM.Holes or {}
+GM.EXPECTED_PLAYER_COUNT = 100
 
 STATE_NOPLAY = 0
 STATE_WAITING = 1 -- waiting for players
@@ -19,7 +20,7 @@ SPLINE = 3 -- looping spline track
 SPLINE_TIMED = 4 -- timed spline track (start-finish)
 
 -- GAME SETTINGS
-WaitTime = 80
+WaitTime = 20
 MaxPower = 300
 StrokeLimit = 15
 LatePenality = 3 -- Amount of strokes + par for late joining
@@ -149,6 +150,7 @@ end
 TEAM_PLAYING = 1
 TEAM_FINISHED = 2
 
+--[[
 TowerModules.LoadModules(
 	{
 		"achivement",
@@ -161,6 +163,7 @@ TowerModules.LoadModules(
 		--"jetpack",
 	}
 )
+]]--
 
 function GM:SetState(state)
 	if not state then

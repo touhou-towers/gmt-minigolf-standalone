@@ -20,6 +20,7 @@ include("sh_scores.lua")
 include("shared.lua")
 include("cl_scoreboard.lua")
 include("sh_payout.lua")
+include("sh_math.lua")
 
 ConVarDisplayHUD = CreateClientConVar("mg_hud", 1, true)
 ConVarDrawBlur = CreateClientConVar("mg_blur", 1, true)

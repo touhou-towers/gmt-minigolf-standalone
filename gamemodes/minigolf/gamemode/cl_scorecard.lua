@@ -297,7 +297,7 @@ function SCORECARD:DrawRow(ply, y, isFirst)
 	if isFirst then
 		surface.SetDrawColor(Color(255, 0, 0, SinBetween(0, 50, CurTime() * 10)))
 		--surface.DrawRect( 0, y, self:GetWide(), self.RowTall )
-		draw.RectBorder(0, y + 2, self:GetWide() - 2, self.RowTall - 2, 2)
+		-- draw.RectBorder(0, y + 2, self:GetWide() - 2, self.RowTall - 2, 2)
 	end
 end
 

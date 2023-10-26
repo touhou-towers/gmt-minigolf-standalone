@@ -19,6 +19,7 @@ AddCSLuaFile("meta_player.lua")
 
 AddCSLuaFile("sh_move.lua")
 AddCSLuaFile("sh_scores.lua")
+AddCSLuaFile("sh_math.lua")
 AddCSLuaFile("shared.lua")
 AddCSLuaFile("cl_scoreboard.lua")
 
@@ -33,7 +34,7 @@ include("sh_payout.lua")
 include("sv_control.lua")
 
 CreateConVar("gmt_srvid", 14)
-CreateConVar("mp_flashlight", 0)
+-- CreateConVar("mp_flashlight", 0)
 
 function GM:Intialize()
 	RegisterNWGlobal()
